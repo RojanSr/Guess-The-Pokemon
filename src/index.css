@@ -1,5 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Reggae One", sans-serif;
+  background-color: black;
+  color: #e5e5e5;
+}
+
+main {
+  margin: 0px 100px;
+  height: 100vh;
+  /* background-image: url(../images/Potential\ Background\ img/1.jpg); */
+}
+
+.bgImg {
+  position: absolute;
+  margin: 0px 50px;
+  left: 0;
+  right: 0;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/Bg-img/1.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
+  z-index: -99;
+}
+
+.main--title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 100px 0px;
+}
+
+@media (max-width: 700px) {
+  .bgImg {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/Potential\ Background\ img/mobile-main-bg.jpg); */
+    background-image: url(../images/Bg-img/mobile-main-bg.jpg);
+
+    margin: 0px 20px;
+  }
 }

@@ -1,9 +1,10 @@
 import React from "react";
 function App() {
   return (
-    <>
-      <h1>Hello.</h1>
-    </>
+    <main>
+      <div className="bgImg"></div>
+      <h1 className="main--title">Guess The Pokémon</h1>
+    </main>
   );
 }
 
