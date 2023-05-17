@@ -1,9 +1,13 @@
 import React from "react";
+import Title from "../Components/Title";
+
 function App() {
   return (
     <main>
-      <div className="bgImg"></div>
-      <h1 className="main--title">Guess The Pokémon</h1>
+      <Title />
+      <button style={{ height: "100px", width: "50px" }}>
+        Replace with an button img
+      </button>
     </main>
   );
 }
