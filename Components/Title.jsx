@@ -1,5 +1,5 @@
 import React from "react";
-import beginningImg from "../images/beginning.png";
+import beginningImg from "../images/cover-pokemon.png";
 
 export default function Title() {
   return (

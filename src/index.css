@@ -12,22 +12,57 @@
 
 :root {
   --bg-clr-main: #0e0e0e;
+  --clr-main-white: #efefef;
+  --clr-hover-yellow: #fccb01;
 }
 
 body {
   font-family: "Reggae One", sans-serif;
   background-color: var(--bg-clr-main);
-  color: #e5e5e5;
+  color: var(--clr-main-white);
 }
 
 main {
   margin: 0px 100px;
   height: 100vh;
-  /* background-image: url(../images/Potential\ Background\ img/1.jpg); */
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: var(--clr-hover-yellow);
 }
+
+/* navbar */
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.nav--logo {
+  width: 250px;
+}
+
+.nav--items {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--clr-main-white);
+}
+
+.nav-item > a:hover {
+  color: var(--clr-hover-yellow);
+}
+
+/* Title component */
 
 .bgImg {
   position: absolute;
@@ -39,28 +74,42 @@ main {
     url(../images/Bg-img/1.jpg);
   background-size: cover;
   background-position: center;
-  filter: brightness(50%);
+  filter: brightness(60%);
   z-index: -99;
 }
 
 .main--title {
-  font-size: 3rem;
+  text-align: center;
+  font-size: 3.5rem;
   font-weight: 700;
-  padding-top: 100px;
-}
-
-@media (max-width: 700px) {
-  .bgImg {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../images/Potential\ Background\ img/mobile-main-bg.jpg); */
-    background-image: url(../images/Bg-img/mobile-main-bg.jpg);
-
-    margin: 0px 20px;
-  }
+  margin-bottom: 30px;
 }
 
 .beginningImg {
-  width: 520px;
-  height: 330px;
-  filter: brightness(85%);
+  margin: 30px 0px;
+  width: 600px;
+  filter: brightness(90%);
+}
+
+/* Button */
+
+.game-description {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+.play-btn {
+  width: 250px;
+  height: 150px;
+  background-image: url(/images/playbutton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  transform: scale(1.05);
 }

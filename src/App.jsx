@@ -1,13 +1,14 @@
 import React from "react";
+import Header from "../Components/Header";
 import Title from "../Components/Title";
+import Button from "../Components/Button";
 
 function App() {
   return (
     <main>
+      <Header />
       <Title />
-      <button style={{ height: "100px", width: "50px" }}>
-        Replace with an button img
-      </button>
+      <Button />
     </main>
   );
 }
