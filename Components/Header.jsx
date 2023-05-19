@@ -25,6 +25,12 @@ export default function Header() {
           <a href="#">About</a>
         </li>
       </ul>
+
+      <a href="https://github.com/RojanSr" className="github-link">
+        <i class="fa-brands fa-github">
+          {/* <a href="https://github.com/RojanSr"></a> */}
+        </i>
+      </a>
     </nav>
   );
 }

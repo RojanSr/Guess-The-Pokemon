@@ -5,7 +5,7 @@ export default function Title() {
   return (
     <>
       <div className="bgImg"></div>
-      <h1 className="main--title">Guess The Pokémon</h1>
+      <h1 className="main--title">Who's That Pokémon?</h1>
       <img src={beginningImg} className="beginningImg"></img>
     </>
   );
