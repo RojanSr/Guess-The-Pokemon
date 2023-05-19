@@ -14,6 +14,7 @@
   --bg-clr-main: #0e0e0e;
   --clr-main-white: #efefef;
   --clr-hover-yellow: #fccb01;
+  --clr-main-blue: #3b58a3;
 }
 
 body {
@@ -40,6 +41,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav--logo {
@@ -109,13 +112,20 @@ nav {
 .game-description {
   max-width: 900px;
   text-align: center;
-  margin-bottom: 20px;
   font-size: 16px;
 }
 
+.appreciation {
+  font-size: 10px;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .play-btn {
-  width: 250px;
-  height: 150px;
+  width: 150px;
+  height: 100px;
+  margin: 10px 0px;
   background-image: url(/images/playbutton.png);
   background-size: contain;
   background-repeat: no-repeat;

@@ -3,15 +3,14 @@ import React from "react";
 export default function Button() {
   return (
     <>
-      <p className="game-description">
-        "Who's That Pokémon" is an engaging and interactive game that challenges
-        players' knowledge of the beloved Pokémon franchise. In this game,
-        players are presented with a series of clues, such as a description, a
-        silhouette, or a distorted image, which they must use to identify the
-        name of the featured Pokémon.
-      </p>
-
       <div className="play-btn"></div>
+
+      <p className="appreciation">
+        *I must emphasize that I am using copyrighted content strictly for
+        personal and non-commercial purposes. I recognize and respect rights to
+        the original creator, and I want to assure that no financial gain is
+        associated with my use of original creator's work.
+      </p>
     </>
   );
 }
